@@ -1,4 +1,5 @@
 // Menü'de kullanacağımız haber başlıkları menuelemanlari isimli dizide, aşağıda.
+document.addEventListener("DOMContentLoaded", function() {
 let menuElemanlari = [
   "Agenda",
   "World",
@@ -30,3 +31,5 @@ function MenuYapici(array) {
 }
 
 document.querySelector('div.header').appendChild(MenuYapici(menuElemanlari));
+
+});
