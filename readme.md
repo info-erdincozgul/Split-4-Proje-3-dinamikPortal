@@ -18,11 +18,10 @@ The most practical way to run this dynamic web page is to use Visual Studio Code
 After these steps, your browser will automatically open, and you will see the live version of the page populated with JavaScript. You can test the following interactions on the page:
 * Expand News: Click the + button under each news article to read the full story. Click it again to collapse the article.
 * Open/Close Menu: Click the "Menü" (Menu) button in the top left corner of the screen to open and close the menu.
-## Kazanımlar
-Bu proje, aşağıdaki ileri düzey JavaScript ve web geliştirme konularında pratik yapmanızı sağlar:
-* JavaScript Bileşenleri (Components): Fonksiyonlar kullanarak tekrar kullanılabilir ve dinamik HTML yapıları oluşturma.
-* DOM Manipülasyonu: createElement, appendChild, textContent gibi metotlarla HTML içeriğini tamamen JavaScript üzerinden oluşturma.
-* Event Handling (Olay Yönetimi): Kullanıcı etkileşimlerine (click) tepki veren dinamik özellikler ekleme.
-* Döngüler: Veri dizisi üzerinde dönerek her bir öğe için DOM elementleri oluşturma.
-* Modüler Kod Yapısı: Kodları farklı dosyalarda (örneğin, components klasörü) tutarak daha temiz ve düzenli bir proje yapısı kurma.
-* CSS Class Manipülasyonu: classList.toggle metoduyla CSS sınıflarını dinamik olarak ekleyip çıkararak elementlerin görünümünü değiştirme.
+## Learning Outcomes
+By exploring or working on this project, you can gain experience in the following areas:
+* You'll learn how to programmatically create and manipulate DOM elements using vanilla JavaScript. The HaberYapici and MenuYapici functions demonstrate how to create div, h2, p, ul, and li elements, set their content and classes, and append them to the existing document.
+* You'll understand how to handle user interaction with event listeners. The menu.js file adds a click event listener to the menu button to toggle a CSS class, which shows or hides the menu. Similarly, haberler.js adds a click listener to each article's expand button to toggle its height and content visibility.
+* You'll learn how to use JavaScript to dynamically render content from a data source. Both haberler.js and menu.js use the forEach method to iterate over arrays (data and menuElemanlari) and generate HTML for each item, appending it to the webpage.
+* You'll learn how to use CSS classes to manage component state and animations. The menu.css and haberler.css files define styles that are toggled by JavaScript. For example, menu--open and article-open classes change the display and height of elements, creating a dynamic user interface without the need for a framework.
+* You'll understand how to use CSS layout techniques such as position: absolute, position: fixed, and z-index to control the placement and layering of elements on a page. The menu, for instance, is positioned fixed so it stays in place when the user scrolls.
