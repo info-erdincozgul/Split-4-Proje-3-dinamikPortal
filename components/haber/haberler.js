@@ -1,4 +1,5 @@
 // Haberleri üretmek için aşağıdaki data objesini kullanacağız. Önce inceleyin sonra 43. satıra geçin.
+document.addEventListener("DOMContentLoaded", function() {
 const data = [
   {
     baslik: "Workintech is training young people to produce technology",
@@ -79,3 +80,6 @@ function HaberYapici(haber) {
 data.forEach((element) => {
   document.querySelector("div.articles").appendChild(HaberYapici(element));
 });
+});
+
+
